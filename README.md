@@ -1,5 +1,6 @@
 #                                                      Youtube-Subscribers Backend Database Project.
-Youtube subscribers backend Api to get the subscribers using specific routes end point made using Node.js , Express.js and MongoDB and Mongoose. By including particular routes end point in the URL, user can access the number of subscribers list,  subscribers name or access subscribers by specific IDs.
+
+This project is a backend API for managing YouTube subscribers, built using Node.js, Express.js, MongoDB, and Mongoose. It provides routes for accessing subscriber data, including getting all subscribers, getting subscribers by ID, and getting subscribers' names and channels. The API is documented using Swagger and can be accessed locally. It also includes instructions for running the project locally and contributing to it. The project is associated with Almabetter and includes a disclaimer about not owning any logos or images used in the project.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -45,7 +46,7 @@ Youtube subscribers backend Api to get the subscribers using specific routes end
 - To run this project locally, use the following command in your CLI:
 
 ```bash
-git clone https://github.com/ankit-devhub/youtube-subscribers-backend.git
+git clone https://github.com/Mohdsadique321/youtube-subscribers.git
 ```
 - Open your favorite code editor and run locally!
 ```bash

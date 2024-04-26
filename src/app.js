@@ -15,10 +15,10 @@ const swaggerOptions = {
         info: {
             title: 'Subscriber API',
             description: 'API documentation for the subscriber service',
-            version: '2.0.0',
+            version: '3.0.0',
         },
     },
-    apis: ['app.js'], // Path to the API routes files
+    apis: ['src/app.js'], // Path to the API routes files
 };
 // Initialize swagger-jsdoc
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
@@ -42,9 +42,7 @@ app.get("/", (req, res) => {
  *         content:
  *           application/json:
  *             schema:
- *               type: array
- *               items:
- *                 $ref: '#/subscribers'
+ *               type: array'
  */
 app.get("/subscribers", async (req, res) => {
     try {

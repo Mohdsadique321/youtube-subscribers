@@ -8,7 +8,7 @@ const subscriberModel = require('./models/subscribers');
 const data = require('./data');
 
 // Connect to DATABASE
-const DATABASE_URL = "mongodb+srv://mohdsadique312:sadique@cluster0.kmaggxd.mongodb.net/";
+const DATABASE_URL = "mongodb+srv://mohdsadique312:sadique@cluster0.kmaggxd.mongodb.net/youtube";
 mongoose.connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', (err) => console.log(err));
@@ -19,10 +19,8 @@ db.once('open', () => console.log('Database connected...'));
  * @async
  * @function refreshAll
  */
-const refreshAll = async () => {
+exports.refreshAll = async () => {
     await subscriberModel.deleteMany({});
     await subscriberModel.insertMany(data);
-    await mongoose.disconnect();
 };
 
-refreshAll();
